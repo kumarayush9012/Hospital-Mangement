@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hospital Management System</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Hospital Management System</h1>
+    <p>Efficiently manage patient records, appointments, and billing</p>
+  </header>
+
+  <nav>
+    <a href="#" onclick="showSection('dashboard')">Dashboard</a>
+    <a href="#" onclick="showSection('patients')">Patients</a>
+    <a href="#" onclick="showSection('appointments')">Appointments</a>
+    <a href="#" onclick="showSection('billing')">Billing</a>
+    <a href="#" onclick="showSection('reports')">Reports</a>
+  </nav>
+
+  <div id="dashboard" class="section">
+    <h2>Dashboard</h2>
+    <p>Welcome, Dr. Singh! Here's a quick overview of hospital activity:</p>
+    <ul>
+      <li><strong>Total Patients Today:</strong> 24</li>
+      <li><strong>Upcoming Appointments:</strong> 12</li>
+      <li><strong>Pending Bills:</strong> 7</li>
+      <li><strong>New Admissions:</strong> 3</li>
+      <li><strong>System Status:</strong> Operational</li>
+    </ul>
+  </div>
+
+  <div id="patients" class="section" style="display: none;">
+    <h2>Patients</h2>
+    <table>
+      <thead>
+        <tr><th>Name</th><th>Age</th><th>Gender</th><th>Diagnosis</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>John Doe</td><td>45</td><td>Male</td><td>Diabetes</td></tr>
+        <tr><td>Rita Sharma</td><td>30</td><td>Female</td><td>Asthma</td></tr>
+        <tr><td>Ali Khan</td><td>50</td><td>Male</td><td>Hypertension</td></tr>
+        <tr><td>Meera Patel</td><td>28</td><td>Female</td><td>Anemia</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div id="appointments" class="section" style="display: none;">
+    <h2>Appointments</h2>
+    <ul>
+      <li><strong>10:00 AM</strong> — John Doe (General Checkup)</li>
+      <li><strong>11:30 AM</strong> — Aisha Verma (Dental Cleaning)</li>
+      <li><strong>12:45 PM</strong> — Rohit Patel (Follow-up)</li>
+      <li><strong>2:00 PM</strong> — Priya Nair (Consultation)</li>
+    </ul>
+  </div>
+
+  <div id="billing" class="section" style="display: none;">
+    <h2>Billing</h2>
+    <table>
+      <thead>
+        <tr><th>Invoice #</th><th>Patient</th><th>Amount</th><th>Status</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>INV-0012</td><td>John Doe</td><td>$150</td><td>Paid</td></tr>
+        <tr><td>INV-0013</td><td>Rita Sharma</td><td>$200</td><td>Pending</td></tr>
+        <tr><td>INV-0014</td><td>Ali Khan</td><td>$300</td><td>Paid</td></tr>
+        <tr><td>INV-0015</td><td>Meera Patel</td><td>$180</td><td>Pending</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div id="reports" class="section" style="display: none;">
+    <h2>Reports</h2>
+    <p>Download and analyze recent hospital activity:</p>
+    <ul>
+      <li><a href="#">Monthly Appointment Summary (PDF)</a></li>
+      <li><a href="#">Billing Ledger (Excel)</a></li>
+      <li><a href="#">Patient Visit History (PDF)</a></li>
+      <li><a href="#">Diagnosis Trends Report (PDF)</a></li>
+    </ul>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Hospital Management System. All rights reserved.</p>
+  </footer>
+</body>
+</html>
